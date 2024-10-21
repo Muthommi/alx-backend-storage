@@ -1,4 +1,5 @@
-DELIMITER $$
+-- Task: Create the stored procedure
+DELIMITER //
 
 CREATE PROCEDURE AddBonus(
 	IN user_id INT,
@@ -21,6 +22,6 @@ BEGIN
 	INSERT INTO corrections (user_id, project_id, score)
 	VALUES (user_id, project_id, score);
 
-END$$
+END//
 
 DELIMITER ;
