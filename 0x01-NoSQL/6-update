@@ -1,5 +1,5 @@
 // This script adds a new attribute school collection
 db.school.update(
     { name: "Holberton school" }, 
-    { address: "972 Mission street" }
+    { $set: { address: "972 Mission street" } }
 );
